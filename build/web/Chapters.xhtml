@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Introduction to Java Programming</title>
+        <div style="text-align: center; margin-bottom: 0em">
+            <h3 style="text-align: center; margin-bottom: 0.2em; color: navy; font-family: Verdana, Helvetica, sans-serif">
+                Introduction to Java Programming, Tenth Edition, 
+                <a href="http://www.cs.armstrong.edu/liang" style="text-decoration: none; color: green">Y. Daniel Liang</a></h3>
+            <link rel="stylesheet" type="text/css" href="http://www.cs.armstrong.edu/liang/common/intro6e.css"></link>
+            <div id="subtabextendline">
+            </div>
+        </div>
+    </h:head>
+    <h:body>
+        <style> table {
+    border:2px solid #FFC300;
+    border-collapse: collapse;
+}
+
+td {
+    border: none
+}</style>
+
+            <p align="center">This quiz is for students to practice. A large number of additional quiz is available for instructors from the Instructor's Resource Website.</p>
+            <table border="1" width="37%" align="center">
+                <tr><td bgcolor="#6193cb" align="center" escape="false"><font style="font-family:Helvetica, sans-serif;" color="white"><b style="font-size: 130%">Self Test Multiple Choice Questions</b></font></td></tr> 
+                <tr style="color:red"><td><h:outputText escape="false" value="#{quizBean.populateChapterListForLoginView()}"/><br></br></td></tr>
+            </table> 
+
+
+            <!-- for some reason these need to be here to set radiovalue/checkboxes? idk -->
+            #{quizBean.getSelectedCheckBoxesValues()}
+            #{quizBean.getSelectedRadioButtonValue()}
+            <h:outputText  escape="false" style="color:red"
+                           value="#{quizBean.radioButtonValue}" />
+            <h:outputText  escape="false" style="color:red"
+                           value="#{quizBean.checkBoxValues}" />
+        <!-- might have probelm need to submit getRadioButonValue/checkbox values but also need to form submit to xhtml? -->
+    </h:body>
+</html>
+
