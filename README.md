@@ -1,7 +1,7 @@
 # JavaMultipleChoiceQuestionsWebsite
 Web application using Java Server Faces.
 
-DEMO: http://sample-env.ctwzgka55a.us-west-2.elasticbeanstalk.com/
+Hosted on AWS: http://sample-env.ctwzgka55a.us-west-2.elasticbeanstalk.com/
 
 1) Create a new account or use Username: test
                                Password: test
